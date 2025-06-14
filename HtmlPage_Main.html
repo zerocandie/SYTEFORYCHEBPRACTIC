@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедра ИСиТ - ЗГУ</title>
+    <style>
+        /* Использую базовые стили, стоит заменить в CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        .top-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+            .top-buttons a {
+                color: white;
+                text-decoration: none;
+                padding: 8px 15px;
+                background-color: #0055a5;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                .top-buttons a:hover {
+                    background-color: #003d7a;
+                }
+
+        main {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            color: #003366;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #003366;
+            border-radius: 25px;
+            outline: none;
+        }
+
+        .search-options {
+            margin: 20px 0;
+        }
+
+            .search-options select {
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #003366;
+            }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            .btn:hover {
+                background-color: #0055a5;
+            }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <img src="assets/logo-zgu.png" alt="Логотип ЗГУ" class="logo">
+        <div class="top-buttons">
+            <a href="https://polaruniversity.ru/" target="_blank">Официальный сайт ЗГУ</a>
+            <a href="https://eios.norvuz.ru/" target="_blank">ЗГУ ЭИОС</a>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <h1>Кафедра "Информационные системы и технологии"</h1>
+
+        <!-- Поисковая строка -->
+        <div class="search-container">
+            <input type="text"
+                   class="search-box"
+                   placeholder="Найти преподавателя, дисциплину...">
+            <div class="search-options">
+                <select>
+                    <option value="all">Все базы</option>
+                    <option value="teachers">Преподаватели</option>
+                    <option value="subjects">Дисциплины</option>
+                    <option value="news">Новости</option>
+                    <option value="events">Мероприятия</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Кнопки-переходы на конкретные базы -->
+        <div class="buttons">
+            <button id="btnTeachers">Преподаватели</button>
+            <button id="btnSubjects">Дисциплины</button>
+            <button id="btnNews">Новости</button>
+            <button id="btnEvents">Мероприятия</button>
+        </div>
+    </main>
+
+    <!-- Подключение JavaScript -->
+    <!-- Подключение JavaScript -->
+    <script src="Scripts.js"></script>
+</body>
+</html>
