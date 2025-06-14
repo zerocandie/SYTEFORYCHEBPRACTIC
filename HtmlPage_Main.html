@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="styles">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Кафедра ИСиТ - ЗГУ</title>
+
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <img src="assets/logo-zgu.png" alt="Логотип ЗГУ" class="logo">
+        <div class="top-buttons">
+            <a href="https://polaruniversity.ru/" target="_blank">Официальный сайт ЗГУ</a>
+            <a href="https://eios.norvuz.ru/" target="_blank">ЗГУ ЭИОС</a>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <h1>Кафедра "Информационные системы и технологии"</h1>
+
+        <!-- Поисковая строка -->
+        <div class="search-container">
+            <input type="text"
+                   class="search-box"
+                   placeholder="Найти преподавателя, дисциплину...">
+            <div class="search-options">
+                <select>
+                    <option value="all">Все базы</option>
+                    <option value="teachers">Преподаватели</option>
+                    <option value="subjects">Дисциплины</option>
+                    <option value="news">Новости</option>
+                    <option value="events">Мероприятия</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Кнопки-переходы на конкретные базы -->
+        <div class="buttons">
+            <button id="btnTeachers">Преподаватели</button>
+            <button id="btnSubjects">Дисциплины</button>
+            <button id="btnNews">Новости</button>
+            <button id="btnEvents">Мероприятия</button>
+        </div>
+    </main>
+
+    <!-- Подключение JavaScript -->
+    <script src="Scripts.js"></script>
+</body>
+</html>
